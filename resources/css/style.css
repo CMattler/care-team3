@@ -1,0 +1,760 @@
+/*General*/
+
+html {
+  font-family: "Calibri";
+  font-size: 20px;
+}
+
+body {
+  font-family: "Calibri";
+}
+
+.btn {
+  margin-top: 2rem;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 0px;
+  background-color: rgba(5, 5, 5, .2);
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1050px) {
+  .btn {
+    background-color: rgba(5, 5, 5, .4);
+  }
+}
+
+.btn:hover {
+  color: black;
+  background-color:white;
+  border: solid 2px white;
+}
+
+h1 {
+  color: white;
+  background-color: rgba(5, 5, 5, .2);
+  padding: 2rem 0rem;
+  margin: 0rem 16rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1050px) {
+  h1{
+    margin: 0rem 0rem;
+    background-color: rgba(5, 5, 5, .4);
+  }
+}
+
+.bg-section {
+  height: 27.4rem;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Header*/
+.navbar-static-top {
+  margin: 2rem 2rem 0rem 2rem;
+  border-bottom: 0px solid white;
+  box-shadow: .25rem .25rem .125rem rgba(0, 0, 0, .5);
+}
+
+.navbar-brand img {
+  height: 7rem;
+  margin-top: -1rem;
+}
+
+.headernav {
+  display: flex;
+}
+
+.logo {
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(103, 197, 193, .0);
+  margin: 2rem, 1rem, 2rem, 1rem;
+  float: right;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 767px) {
+  .navlinks .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navlinks {
+    flex-direction: column;
+  }
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(103, 197, 193);
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding-right: 2rem;
+  }
+}
+
+.navbar-brand {
+  padding-left: 2rem;
+  margin-top: -1.3rem;
+}
+
+.donate-btn {
+  background-color: rgb(199, 64, 38);
+  margin-right: -.8rem;
+}
+
+.upper-nav {
+  display: flex;
+  margin-top: -2rem;
+  justify-content: flex-end;
+  margin-right: 4.5rem;
+}
+
+.upper-nav-item {
+  margin: 0rem .25rem .5rem .25rem;
+  background-color: rgb(103, 197, 193);
+  padding: .1rem .3rem;
+}
+
+.upper-nav-item a {
+  text-transform: uppercase;
+  color: black;
+}
+
+.upper-nav-item a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*Carousel*/
+.carousel {
+margin-top: -7.5rem;
+padding-top: 3rem;
+width: 100%;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 0rem 0rem 0rem;
+}
+
+.carousel1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 27.4rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel1 h1 {
+  background-color: rgba(5,5,5,.2);
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel1 h1 {
+    background-color: rgba(5, 5, 5, .4);
+  }
+}
+
+.jumbo1 {
+  background-image: url(../images/starcar.jpg);
+}
+
+.jumbo2 {
+  background-image: url(../images/volcar.jpeg);
+}
+
+.jumbo3 {
+  background-image: url(../images/resourcar.jpeg);
+}
+
+.jumbo4 {
+  background-image: url(../images/testicar.jpeg);
+}
+
+/*Quote*/
+.quote {
+  margin: 2rem;
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: rgb(84, 41, 22);
+}
+
+@media only screen and (max-width: 1050px) {
+  .quote {
+    padding: 0rem 0rem;
+  }
+}
+
+.quote1 {
+  font-family: "Times New Roman";
+  color: rgb(199, 64, 38);
+  background-color: rgba(255, 255, 255, 0.0);
+  text-transform: none;
+}
+
+/*Mission*/
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(61, 33, 22);
+  background-image: url(../images/LSO192.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0rem 19rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .mission {
+    padding: 0rem 1rem;
+  }
+}
+
+.mission h3 {
+  text-transform: uppercase;
+}
+
+.mission-p {
+  font-family: "Times New Roman";
+  font-size: 1.25rem;
+}
+
+/*Volunteer*/
+.volunteer {
+  background-image: url(../images/achievement-adult-agreement-1061583.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: white;
+}
+
+/*Blog*/
+.blog {
+  background-image: url(../images/cloudy-sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/*Quicklinks*/
+.quicklinks {
+  padding: 1.7rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .quicklinks {
+    flex-direction: column;
+  }
+}
+
+.ql-item a {
+  color: black;
+}
+
+.ql-item p {
+  text-transform: uppercase;
+  margin-top: .8rem;
+}
+
+.ql-item2 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .ql-item2 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+/*RentAFacility*/
+.rentafacility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-image: url(../images/1544765-wheelchairx-1509337202-149-640x480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*EmailUpdates*/
+.update-btn {
+  background-color: rgb(103, 197, 193);
+  border: solid 2px rgb(199, 64, 38);
+}
+
+.update-btn:hover {
+  border: solid 2px rgb(61, 33, 22);
+}
+
+.emailupdates {
+  color: rgb(84, 41, 22);
+  padding: 1rem 19rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .emailupdates {
+    padding: 1rem 0rem;
+  }
+}
+
+.emailupdates h3 {
+  text-transform: uppercase;
+}
+
+.emailupdates p {
+  font-size: 1rem;
+  font-family: "Times New Roman";
+  color: rgb(199, 64, 38);
+}
+
+/*Footer*/
+.copyright {
+  color: white;
+display: flex;
+justify-content: flex-end;
+}
+
+.navbar-static-bottom {
+  margin-bottom: 0rem;
+  border-radius: 0px;
+  background-color: rgb(61, 33, 22);
+}
+
+.navbar-inverse .collapse ul li a {
+color: rgb(199, 64, 38);
+text-transform: uppercase;
+}
+
+.footer-collapse {
+  float: left;
+  padding-top: .5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-inverse .navbar-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 933px) {
+  .footer-collapse .foot-nav {
+    display: none;
+  }
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 0rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.3rem;
+}
+
+.social-icon {
+  margin: 0rem 1rem;
+}
+
+
+/*About us page*/
+
+.page-title {
+  height: 19.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4.5rem;
+}
+
+.about {
+  background-image: url(../images/about1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about2 {
+  background-image: url(../images/about3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title h1 {
+  color: rgb(84, 41, 22);
+  background-color: transparent;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.scroll-text {
+  font-family: "Times New Roman";
+  font-size: 1.3rem;
+}
+
+.scroll-heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  margin: 0rem;
+  padding: 0rem 8rem;
+}
+
+.service-item h2 {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1050px) {
+  .service-item {
+    padding: 0rem 1rem;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .service-item h2{
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+}
+
+.si1 {
+  background-color: rgb(152, 152, 152);
+}
+
+.si1 h2,
+.si1 p {
+ color: white;
+}
+
+.si2 {
+  background-color: rgb(103, 197, 193);
+}
+
+.si2 h2,
+.si2 p {
+   color: rgb(48, 18, 7);
+}
+
+.si3 {
+ background-color: rgb(199, 64, 38);
+}
+
+.si3 h2,
+.si3 p {
+ color: white;
+}
+
+.si4 h2,
+.si4 p {
+ color: rgb(199, 64, 38);
+}
+
+
+/*Volunteer page*/
+
+.volunteer-items {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.volunteer-item {
+ padding: 0rem;
+}
+
+.vol-img {
+ height: 26rem;
+}
+
+.alternatively {
+ margin: 0rem;
+ display: flex;
+ flex-direction: column;
+ color: white;
+ background-color: rgb(61, 33, 22);
+ padding: 2rem;
+}
+
+.alternatively .scroll-text {
+  font-family: "Calibri";
+}
+
+
+/*Testimonials page*/
+
+.testimonials {
+ background-image: url(../images/testimonials.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.testimonials h1 {
+ color: white;
+}
+
+.testimonial-items {
+ display: flex;
+ flex-direction: column;
+ margin-top: 3rem;
+ border-bottom: 2px solid grey;
+}
+
+.test-text {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.testimonial-item {
+ margin: 1rem 0rem;
+ display: flex;
+ flex-direction: row;
+}
+
+.testimonial-item .test-text {
+ margin-left: 6rem;
+ margin-right: 0rem;
+ font-size: 1rem;
+}
+
+.testimonial-border:after {
+ content: '';
+ width: 80%;
+ height: 2px;
+ background: gray;
+ position: absolute;
+ margin-top: 21rem;
+}
+
+.test-rev {
+ flex-direction: row-reverse;
+}
+
+.test-rev .test-text {
+ margin-left: 0rem;
+ margin-right: 6rem;
+ font-size: 1rem;
+}
+
+.test-img {
+ overflow: hidden;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 200px;
+ width: 15rem;
+ height: 15rem;
+}
+
+.test-img1 {
+ background-image: url(../images/P6200212.JPG);
+ border: 20px solid rgb(199, 64, 38);
+}
+
+.test-img2 {
+ background-image: url(../images/P2.JPG);
+ border: 20px solid rgb(103, 197, 193);
+}
+
+.test-img3 {
+ background-image: url(../images/P6260148.JPG);
+ border: 20px solid rgb(61, 33, 22);
+}
+
+.test-img4 {
+ background-image: url(../images/PANA2021.JPG);
+ border: 20px solid rgb(199, 64, 38);
+}
+
+.test-img5 {
+ background-image: url(../images/jpss_rEXUpgV_slideshow.jpg);
+ border: 20px solid rgb(103, 197, 193);
+}
+
+.test-img6 {
+ background-image: url(../images/maxresdefault.jpg);
+ border: 20px solid rgb(61, 33, 22);
+}
+
+.test-photo {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.test-photo p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+/*confidentiality page*/
+
+.confidentiality {
+ height: auto;
+}
+
+.confidentiality h1 {
+ margin-left: 1rem;
+ margin-right: 1rem;
+ margin-bottom: 1rem;
+}
+
+.confidentiality h2 {
+  font-weight: bold;
+}
+
+.confidentiality ul {
+ list-style-type: disc;
+}
+
+.confidentiality ul li {
+  font-family: "Times New Roman";
+  font-size: 1rem;
+}
+
+.confidentiality ol {
+ list-style-type: decimal;
+}
+
+.confidentiality ol li {
+  font-family: "Times New Roman";
+  font-size: 1rem;
+}
+
+.confidentiality ol li p {
+  font-family: "Times New Roman";
+  font-size: 1rem;
+}
+
+.confidentiality p {
+  font-family: "Times New Roman";
+  font-size: 1.3rem;
+}
+
+
+/*Donation page*/
+
+.donate-graphic h2 {
+  font-weight: bold;
+}
+.d-img {
+  background-image: url(../images/P8040008.JPG);
+  background-position: top;
+  background-size: cover;
+}
+
+.donation-items {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.donation-item .scroll-text {
+  text-transform: uppercase;
+  font-family: "Calibri";
+}
+
+.donation-item h2 {
+  font-weight: bold;
+}
+
+.di-head {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.di-head1 {
+  margin-bottom: -.5rem;
+}
+
+.d-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.di1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.di1 :after {
+  background: rgb(199, 64, 38);
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: -7px;
+}
+
+.remittance {
+  padding: 1rem 10rem;
+  background-color: rgb(103, 197, 193);
+}
+
+.remittance .scroll-text {
+  font-family: "Calibri";
+  font-weight: bold;
+}
+
+
+/*Resources page*/
+
+.video-img {
+  width: 100%;
+}
+
+
+/*Contact page*/
+
+.cont-item .scroll-text {
+  text-transform: lowercase;
+}
+
+
+/*Services page*/
+
+.service-group {
+  display: flex;
+}
