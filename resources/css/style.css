@@ -29,6 +29,10 @@ body {
   border: solid 2px white;
 }
 
+p {
+  margin: 0 0 20px;
+}
+
 h1 {
   color: white;
   background-color: rgba(5, 5, 5, .2);
@@ -371,6 +375,12 @@ text-transform: uppercase;
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .footer-collapse ul {
+    display: none;
+  }
+}
+
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -434,7 +444,13 @@ text-transform: uppercase;
   padding: 0rem 8rem;
 }
 
-.service-item h2 {
+.service-item2 {
+  margin: 0rem;
+  padding: 0rem 7rem;
+}
+
+.service-item h2,
+.service-item2 h2 {
   font-weight: bold;
 }
 
@@ -510,6 +526,12 @@ text-transform: uppercase;
  padding: 2rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .alternatively {
+    padding: 2rem .5rem;
+  }
+}
+
 .alternatively .scroll-text {
   font-family: "Calibri";
 }
@@ -547,10 +569,28 @@ text-transform: uppercase;
  flex-direction: row;
 }
 
+@media only screen and (max-width: 1125px) {
+  .testimonial-item {
+    padding: 0rem .5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .testimonial-item {
+    flex-direction: column;
+  }
+}
+
 .testimonial-item .test-text {
  margin-left: 6rem;
  margin-right: 0rem;
  font-size: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .testimonial-item .test-text {
+    margin-left: 0rem;
+  }
 }
 
 .testimonial-border:after {
@@ -562,14 +602,33 @@ text-transform: uppercase;
  margin-top: 21rem;
 }
 
+@media only screen and (max-width: 1050px) {
+  .testimonial-border:after {
+    display: none;
+  }
+}
+
+
 .test-rev {
  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 900px) {
+  .test-rev {
+    flex-direction: column;
+  }
 }
 
 .test-rev .test-text {
  margin-left: 0rem;
  margin-right: 6rem;
  font-size: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .test-rev .test-text {
+    margin-right: 0rem;
+  }
 }
 
 .test-img {
@@ -733,9 +792,40 @@ text-transform: uppercase;
   background-color: rgb(103, 197, 193);
 }
 
+@media only screen and (max-width: 1125px) {
+  .remittance {
+    padding: .5rem;
+  }
+}
+
 .remittance .scroll-text {
   font-family: "Calibri";
   font-weight: bold;
+}
+
+.donation-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.form-group {
+
+}
+
+.form-item {
+
+}
+
+.form-input {
+  margin-left: 7rem;
+  margin-top: -1.7rem;
+}
+
+.form-input2 {
+  margin-top: -2.15rem;
+  margin-left: 7rem;
 }
 
 
@@ -757,4 +847,56 @@ text-transform: uppercase;
 
 .service-group {
   display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .service-group img {
+    display: none;
+  }
+}
+
+/*Easy tabs*/
+
+.etabs {
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  display: inline-block;
+  zoom:1;
+  *display:inline;
+  background: #eee;
+  border: solid 1px #999;
+  border-bottom: none;
+  -moz-border-radius: 4px 4px;
+  -webkit-border-radius: 4px 4px;
+}
+
+.tab a {
+  font-size: 14px;
+  line-height: 2em;
+  display: block;
+  padding: 0px;
+  outline: none;
+}
+
+.tab.active {
+  background: #fff;
+  position: relative;
+  top: 1px;
+  border: 3px solid black;
+  border-color: #666;
+}
+
+.tab a.active {
+  font-weight: bold;
+}
+
+.tab-container .panel-container {
+  background: #fff;
+  border: solid #666 1px;
+  padding: 10px;
+  -moz-border-radius: 0 4px 4px 4px;
+  -webkit-border-radius: 0 4px 4px 4px;
 }

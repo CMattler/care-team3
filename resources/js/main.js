@@ -10,4 +10,13 @@ $(document).ready(function(){
     dots: true
   });
 
+  $('#tab-container').easytabs({
+    animate			: true,
+    updateHash		: true,
+    transitionIn	: 'slideDown',
+    transitionOut	: 'slideUp',
+    animationSpeed	: 600,
+    
+    });
+
 });
