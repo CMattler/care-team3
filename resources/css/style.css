@@ -224,7 +224,7 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   color: rgb(61, 33, 22);
-  background-image: url(../images/LSO192.png);
+  background-image: url(../images/sp-as-disciple-featured-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -239,11 +239,14 @@ width: 100%;
 
 .mission h3 {
   text-transform: uppercase;
+  color: white;
 }
 
 .mission-p {
   font-family: "Times New Roman";
   font-size: 1.25rem;
+  color: white;
+  background-color: rgba(5, 5, 5, .2);
 }
 
 /*Volunteer*/
@@ -257,7 +260,7 @@ width: 100%;
 
 /*Blog*/
 .blog {
-  background-image: url(../images/cloudy-sky.jpg);
+  background-image: url(../images/srila-prabhupada-with-devotees.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
